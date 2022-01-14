@@ -5,10 +5,14 @@ import VideoPlayer from './modules/playVideo';
 import MiniSlider from './modules/slider/slider-mini';
 import Defference from './modules/differense';
 import Form from './modules/forms';
+import Slider from './modules/slider/slider';
 
 window.addEventListener('DOMContentLoaded', ()  => {
     const slider = new MainSlider({btns: '.next', page: '.page'});
     slider.render();
+
+    const moduleSlider = new MainSlider({page: '.moduleapp', btns: '.next'});
+    moduleSlider.render();
 
     const showUpSlider = new MiniSlider({
         page: '.showup__content-slider',
